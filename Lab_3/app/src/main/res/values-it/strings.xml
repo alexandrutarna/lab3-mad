@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="edit">modifica</string>
+    <string name="name">nome</string>
+    <string name="mail">mail</string>
+    <string name="bio">bio</string>
+    <string name="bio_text">bio</string>
+    <string name="done">fatto</string>
+    <string name="preference">preferenze</string>
+    <string name="photo">Fotocamera</string>
+    <string name="gallery">Galleria</string>
+    <string name="cancel">Annulla</string>
+    <string name="saveMessage">Salvato</string>
+    <string name="borrow">preso in prestito</string>
+    <string name="land">da prestare</string>
+
+    <string name="your_email">La tua mail</string>
+    <string name="your_pass">Password</string>
+    <string name="sign_in_button">Accedi</string>
+    <string name="create_acc_button">Registrati</string>
+    <string name="sign_out_button">Esci</string>
+    <string name="sign_in_msg">Accesso effettuato: </string>
+    <string name="sign_out_msg">Uscito</string>
+    <string name="sign_in_btn_1">Accedi</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="title">Titolo</string>
+    <string name="author">Autore</string>
+    <string name="publisher">Publisher</string>
+    <string name="editionYear">Edition Year</string>
+    <string name="bookCondition">Book Condition</string>
+    <string name="isbn">ISBN</string>
+    <string name="bookNote">Book Notes</string>
+
+
+
+</resources>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="edit">edit</string>
+    <string name="name">name</string>
+    <string name="mail">mail</string>
+    <string name="bio">bio</string>
+    <string name="bio_text">bio</string>
+    <string name="done">done</string>
+    <string name="preference">preference</string>
+    <string name="photo">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="saveMessage">Saved</string>
+    <string name="borrow">Borrowed</string>
+    <string name="land">To Land</string>
+
+    <string name="your_email">Your email address</string>
+    <string name="your_pass">Password</string>
+    <string name="confirm_pass">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="create_acc_button">Create Account</string>
+    <string name="sign_out_button">Sign Out</string>
+    <string name="sign_in_msg">Signed In: </string>
+    <string name="sign_out_msg">Signed Out</string>
+    <string name="sign_in_btn_1">Sign In</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="publisher">Publisher</string>
+    <string name="editionYear">Edition Year</string>
+    <string name="bookCondition">Book Condition</string>
+    <string name="isbn">ISBN</string>
+    <string name="bookNote">Book Notes</string>
+
+
+
+</resources>

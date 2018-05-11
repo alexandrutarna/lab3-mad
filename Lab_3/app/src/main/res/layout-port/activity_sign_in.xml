@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/signin_topbar"/>
+
+    <View android:id="@+id/marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar_top"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/your_email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/marginTop"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/your_email"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/your_email"/>
+
+       <EditText
+        android:id="@+id/your_pass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/space1"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/your_pass"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <View android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/your_pass"/>
+
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/confirm_pass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/space2"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/confirm_pass"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/confirm_pass"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/space2"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/sign_in_button" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/space3"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/confirm" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/space3"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/create_acc_button" />
+        />
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tvSignInStatus"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_out_button" />
+
+
+</RelativeLayout>
+
+
+</ScrollView>
+
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:orientation="vertical"
+tools:context="it.polito.mad.lab3.EditProfile">
+
+
+    <include layout="@layout/edit_top"/>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp">
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/homersimpson"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/photoSel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/img"
+            android:layout_alignRight="@id/img"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            android:tint="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+
+
+
+
+    <ScrollView android:id="@+id/myScrollView1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="2">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView android:layout_width="match_parent"
+                    android:minWidth="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/name" />
+
+                <EditText android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/name" />
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:minWidth="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/mail" />
+
+                <EditText  android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/mail" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:minWidth="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/bio" />
+
+                <EditText  android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="@string/bio_text" />
+
+            </LinearLayout>
+
+            <include layout="@layout/middle"/>
+
+            <ImageButton android:id="@+id/addBook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/toolbar_middle"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
