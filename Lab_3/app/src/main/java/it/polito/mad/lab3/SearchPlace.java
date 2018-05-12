@@ -11,7 +11,11 @@ import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.PlaceBufferResponse;
+import com.google.android.gms.location.places.internal.PlaceEntity;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.model.LatLng;
+
 
 public class SearchPlace extends AppCompatActivity {
 
@@ -41,7 +45,43 @@ public class SearchPlace extends AppCompatActivity {
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
                 Place place = PlaceAutocomplete.getPlace(this, data);
-                Log.e("Tag", "Place: " + place.getAddress() + place.getPhoneNumber());
+
+                Log.e("Tag", "Place: " + place.getAddress() + "\n");
+
+                Log.e("place", "tostring: " + place.toString()+ "\n");
+
+                Log.e("place", "id: " + place.getId()+ "\n");
+                Log.e("place", "name: " + place.getName()+ "\n");
+                Log.e("place", "address: " + place.getAddress()+ "\n");
+                Log.e("place", "atributions: " + place.getAttributions()+ "\n");
+                Log.e("place", "latlng: " + place.getLatLng() + "\n");
+
+                String coordinates = place.getLatLng().toString();
+                System.out.println(coordinates +"\n");
+
+                int startPos = coordinates.indexOf("(");
+                int commaPos = coordinates.indexOf(",");
+
+                String lat = coordinates.substring(startPos+1,commaPos);
+                String lng = coordinates.substring(commaPos+1,coordinates.length() -1 );
+                System.out.println("lat: " + lat + "\n");
+                System.out.println("lng: " + lng + "\n");
+
+                String address = place.getAddress().toString();
+                System.out.println("address: " + address);
+
+                String[] values = address.split(",");
+                String country = values[values.length -1];
+                country = country.replaceAll("\\s+","");
+
+                String city = values[0];
+                System.out.println("country :" + country);
+                System.out.println("city :" + city);
+
+
+
+
+
 
 
                 ((TextView) findViewById(R.id.searched_address)).setText(place.getName()+",\n"+
